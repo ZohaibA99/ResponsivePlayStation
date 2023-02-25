@@ -1,0 +1,29 @@
+.button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #ffffff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: width 0.5s;
+}
+
+.button__image{
+    width: 40px;
+    display: none;
+}
+
+.button:hover .button__image,
+.button:hover .button__image{
+    display: block;
+}
+
+.button:hover,
+.button:focus{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
