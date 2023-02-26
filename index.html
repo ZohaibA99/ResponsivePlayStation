@@ -11,14 +11,15 @@
             <div class="navbar">
                 <img src="/images/logo.png" alt="playstation logo" class="logo"/>
                 <nav>
-                    <ul class="list nav">
+                    <ul class="list nav" id="menuList">
                         <li class="nav__item"><a class="link nav__link">Game Controllers</a></li>
                         <li class="nav__item"><a class="link nav__link">VR Accessories</a></li>
                         <li class="nav__item"><a class="link nav__link">Media Remotes</a></li>
                         <li class="nav__item"><a class="link nav__link">Others</a></li>
                     </ul>            
                 </nav>
-                <img src="/images/menu.png" alt="mobile menu button" class="menu-icon"/>
+                <img src="/images/menu.png" alt="mobile menu button" class="menu-icon"
+                onClick="togglemenu()"/>
             </div>
             <div class="row">
                 <div class="details">
@@ -43,5 +44,19 @@
                 <img src="/images/tw.png" alt="Twitter"/>
             </div>
         </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px"){
+                    menuList.style.maxHeight = "130px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

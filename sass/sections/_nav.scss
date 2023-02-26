@@ -7,10 +7,25 @@
 nav{
     flex: 1;
     text-align: right;
+    @media screen and (max-width: 700px){
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
 }
 
 .nav__item{
     display: inline-block;
     margin-right: 30px;
+
+    @media screen and (max-width: 700px){
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
 }
 

@@ -32,6 +32,11 @@
   color: #000000;
   font-size: 14px;
 }
+@media screen and (max-width: 700px) {
+  .nav__link {
+    color: #ffffff;
+  }
+}
 
 .nav__link:hover,
 .nav__link:focus {
@@ -75,6 +80,20 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-icon {
   width: 25px;
   cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
 }
 
 .navbar {
@@ -87,10 +106,27 @@ nav {
   flex: 1;
   text-align: right;
 }
+@media screen and (max-width: 700px) {
+  nav {
+    width: 100%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+}
 
 .nav__item {
   display: inline-block;
   margin-right: 30px;
+}
+@media screen and (max-width: 700px) {
+  .nav__item {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .row {
@@ -99,15 +135,31 @@ nav {
   align-items: center;
   margin: 60px 0;
 }
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+}
 
 .details {
   flex-basis: 40%;
   position: relative;
   margin-left: 50px;
 }
+@media screen and (max-width: 700px) {
+  .details {
+    flex-basis: 100;
+  }
+}
 
 .details__heading {
   font-size: 54px;
+}
+@media screen and (max-width: 700px) {
+  .details__heading {
+    font-size: 35px;
+  }
 }
 
 .details__discription {
@@ -115,6 +167,11 @@ nav {
   color: #707070;
   font-weight: 100;
   margin: 20px 0 10px;
+}
+@media screen and (max-width: 700px) {
+  .details__discription {
+    font-size: 15px;
+  }
 }
 
 .details__info {
@@ -144,9 +201,20 @@ nav {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  .product {
+    flex-basis: 100;
+    margin-bottom: 50px;
+  }
+}
 
 .product .product__image {
   width: 90%;
+}
+@media screen and (max-width: 700px) {
+  .product .product__image {
+    width: 77%;
+  }
 }
 
 .product__background {
@@ -158,7 +226,12 @@ nav {
   height: 100%;
   width: 80%;
   z-index: -1;
-  transform: translateX(100px);
+  transform: translateX(150px);
+}
+@media screen and (max-width: 700px) {
+  .product__background {
+    transform: translateX(75px);
+  }
 }
 
 .add__button img {

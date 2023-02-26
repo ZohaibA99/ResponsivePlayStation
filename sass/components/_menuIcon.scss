@@ -1,4 +1,17 @@
 .menu-icon{
     width: 25px;
     cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: 700px){
+        display: block;
+        margin-left: auto;
+    }
+}
+
+#menuList{
+    @media screen and (max-width: 700px){
+        overflow: hidden;
+        transition: 0.5s;
+    }
 }
